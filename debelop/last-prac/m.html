@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイマー</title>
+    <style>
+        .timer {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        button {
+            font-size: 1.2em;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>カウントアップタイマー</h2>
+        <div id="upTimer" class="timer">0:00</div>
+        <button id="startUp">スタート</button>
+        <button id="pauseUp" disabled>一時停止</button>
+        <button id="resetUp">リセット</button>
+    </div>
+
+    <div>
+        <h2>カウントダウンタイマー</h2>
+        <div id="downTimer" class="timer">1:00</div>
+        <button id="startDown">スタート</button>
+        <button id="pauseDown" disabled>一時停止</button>
+        <button id="resetDown">リセット</button>
+    </div>
+
+    <script>
+        // カウントアップタイマー
+        let upTimerInterval;
+        let upTimerSeconds = 0;
+        let isUpRunning = false;
+
+        function startUpTimer() {
+            if (isUpRunning) return;
+            isUpRunning = true;
+            document.getElementById('startUp').disabled = true;  // スタートボタン無効化
+            document.getElementById('pauseUp').disabled = false; // 一時停止ボタン有効化
+
+            upTimerInterval = setInterval(function() {
+                upTimerSeconds++;
+                displayUpTimer();
+            }, 1000);
+        }
+
+        function pauseUpTimer() {
+            clearInterval(upTimerInterval);
+            isUpRunning = false;
+            document.getElementById('startUp').disabled = false;  // スタートボタン有効化
+            document.getElementById('pauseUp').disabled = true;   // 一時停止ボタン無効化
+        }
+
+        function resetUpTimer() {
+            clearInterval(upTimerInterval);
+            upTimerSeconds = 0;
+            isUpRunning = false;
+            document.getElementById('startUp').disabled = false;  // スタートボタン有効化
+            document.getElementById('pauseUp').disabled = true;   // 一時停止ボタン無効化
+            displayUpTimer();
+        }
+
+        function displayUpTimer() {
+            const minutes = Math.floor(upTimerSeconds / 60);
+            const seconds = upTimerSeconds % 60;
+            document.getElementById('upTimer').textContent = `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+        }
+
+        // カウントダウンタイマー
+        let downTimerInterval;
+        let downTimerSeconds = 60;  // 1分からカウントダウン(タイマー初期値の変更はここを秒数で設定)
+        let isDownRunning = false;
+
+        function startDownTimer() {
+            if (isDownRunning) return;
+            isDownRunning = true;
+            document.getElementById('startDown').disabled = true;  // スタートボタン無効化
+            document.getElementById('pauseDown').disabled = false; // 一時停止ボタン有効化
+
+            downTimerInterval = setInterval(function() {
+                if (downTimerSeconds > 0) {
+                    downTimerSeconds--;
+                    displayDownTimer();
+                } else {
+                    clearInterval(downTimerInterval);
+                    isDownRunning = false;
+                    document.getElementById('startDown').disabled = false;  // スタートボタン有効化
+                    document.getElementById('pauseDown').disabled = true;   // 一時停止ボタン無効化
+                }
+            }, 1000);
+        }
+
+        function pauseDownTimer() {
+            clearInterval(downTimerInterval);
+            isDownRunning = false;
+            document.getElementById('startDown').disabled = false;  // スタートボタン有効化
+            document.getElementById('pauseDown').disabled = true;   // 一時停止ボタン無効化
+        }
+
+        function resetDownTimer() {
+            clearInterval(downTimerInterval);
+            downTimerSeconds = 60;  // 1分にリセット(タイマー初期値の変更はここを秒数で設定)
+            isDownRunning = false;
+            document.getElementById('startDown').disabled = false;  // スタートボタン有効化
+            document.getElementById('pauseDown').disabled = true;   // 一時停止ボタン無効化
+            displayDownTimer();
+        }
+
+        function displayDownTimer() {
+            const minutes = Math.floor(downTimerSeconds / 60);
+            const seconds = downTimerSeconds % 60;
+            document.getElementById('downTimer').textContent = `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+        }
+
+        // イベントリスナー
+        document.getElementById('startUp').addEventListener('click', startUpTimer);
+        document.getElementById('pauseUp').addEventListener('click', pauseUpTimer);
+        document.getElementById('resetUp').addEventListener('click', resetUpTimer);
+
+        document.getElementById('startDown').addEventListener('click', startDownTimer);
+        document.getElementById('pauseDown').addEventListener('click', pauseDownTimer);
+        document.getElementById('resetDown').addEventListener('click', resetDownTimer);
+    </script>
+</body>
+
+</html>

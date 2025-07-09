@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/* 共通 */
+html {
+    font-size: 30px;
+    background-color: black;
+}
+
+p {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 4rem;
+    color: #7BE888;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+
+/* トップ */
+.topSection section {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 60%;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-menu h4 {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.under-menu h4 {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.under-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    flex-shrink: 1;
+}
+
+/* 自己紹介 */
+
+/* スキル */
+.skill-section p {
+    font-family: 'DotGothic16', sans-serif;
+    color: #989898;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.baseHyouka-div p {
+    color: white;
+}
+
+/* スライダー */
+.Top_slider div img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Top_slider div {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.slick-slide img {
+    border: none;
+    /* 初期状態では枠線なし */
+    filter: brightness(60%);
+
+}
+
+.slick-current img {
+    border-radius: 5px;
+    /* 角を丸くする */
+    filter: brightness(100%);
+}
+
+/* ラーメンと私 */
+.bold-text {
+    font-weight: bold;
+}

@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+.NoneClass {
+    display: none;
+}
+
+.flexClass {
+    display: flex;
+}
+
+span {
+    color: blue;
+}
+
+body {
+    text-align: center;
+    background-image: url(./img/パソコンを使うペンギン.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+}
+
+#helpDiv {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.881);
+    color: rgb(92, 85, 76);
+    z-index: 1000;
+    /* 他の要素の上に表示 */
+    top: 25%;
+    left: 30%;
+    right: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#historyDiv {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.881);
+    color: rgb(92, 85, 76);
+    z-index: 1000;
+    /* 他の要素の上に表示 */
+    top: 25%;
+    left: 30%;
+    right: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#helpDiv p {
+    font-size: 20px;
+}
+
+#sub-menu {
+    display: flex;
+}
+
+#history {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline;
+    background: white;
+    color: rgb(92, 85, 76);
+    border: solid rgb(92, 85, 76) 1px;
+}
+
+#help {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline;
+    background: white;
+    color: rgb(92, 85, 76);
+    border: solid rgb(92, 85, 76) 1px;
+}
+
+#home {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline;
+    background: white;
+    color: rgb(92, 85, 76);
+    border: solid rgb(92, 85, 76) 1px;
+}
+
+#menu {
+    margin-top: 150px
+}
+
+#titleText {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background: rgb(129, 232, 255);
+    display: inline;
+    margin-bottom: 100px;
+}
+
+#startText {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline;
+    border-radius: 20px;
+    background: rgb(255, 133, 133);
+    font-size: 20px;
+}
+
+#start {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 90px;
+    margin-top: 50px;
+}
+
+
+#start #modeSelect {
+    margin-right: 200px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    background: rgb(129, 232, 255);
+    display: inline;
+}
+
+#modeSelectDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#textMode {
+    border: solid white 5px;
+    background: rgb(129, 232, 255);
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+#wordMode {
+    border: solid white 5px;
+    background: rgb(129, 232, 255);
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+#endress {
+    border: solid white 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    background: rgb(255, 129, 131);
+}
+
+#spaceToStart {
+    font-size: 50px;
+    text-shadow: 4px 4px black;
+    color: rgb(129, 232, 255);
+}
+
+#play {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 90px;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    color: black;
+    background: rgba(255, 255, 255, 0.781);
+}
+
+#result {
+    display: flex;
+    margin-left: 13%;
+    margin-right: 15%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+}
+
+#result p {
+    width: 80px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#resultLeft {
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 5%;
+    padding-right: 40%;
+
+    color: black;
+    background: rgba(255, 255, 255, 0.781);
+}
+
+#resultRight {
+    margin-top: 20px;
+    margin-right: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40%;
+
+    color: black;
+    background: rgba(255, 255, 255, 0.781);
+}
+
+#resultWeakKey p {
+    display: inline;
+}
+
+#resultWeakKey {
+    margin-left: 20px;
+    margin-top: 10px;
+}

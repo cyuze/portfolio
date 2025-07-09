@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/* 共通 */
+html {
+    font-size: 30px;
+    background-color: black;
+}
+
+p {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 4rem;
+    color: #7BE888;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+
+/* トップ */
+.borderDiv {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+.topSection h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.topSection table {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.topSection tr {
+    height: 100px;
+}
+
+.topSection .leftTd {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    font-size: 1rem;
+    display: inline;
+    margin-right: 200px;
+}
+
+.topSection .rightTd {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    font-size: 1rem;
+    display: inline;
+}
+
+/* 自己紹介 */
+.introductionSection h1 {
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.miniIntroductionDiv {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 70%;
+    margin: 1rem auto 1rem auto;
+}
+
+.miniIntroductionDivItem1 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.miniIntroductionDivItem2 {
+    width: 50%;
+    display: flex;
+}
+
+.miniIntroductionDivItem2 h3 {
+    margin: auto 0 auto 0;
+    padding: 0;
+}
+
+.miniIntroductionDivItem2 p {
+    margin: auto 0 auto 1rem;
+    padding: 0;
+    color: #989898;
+}
+
+.miniIntroductionDivItem3 {
+    width: 50%;
+    text-align: right;
+    margin: auto 0 auto 0;
+}
+
+.miniIntroductionDivItem3 p {
+    margin: 0;
+    padding: 0;
+    color: #989898;
+}
+
+.miniIntroductionDiv2 {
+    width: 90%;
+    margin: 1rem auto 1rem auto;
+    display: flex;
+}
+
+.miniIntroductionDiv2 p {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.miniIntroductionDiv2Item1 {
+    width: auto;
+}
+
+.miniIntroductionDiv2Item2 {
+    width: auto;
+    margin-left: 1rem;
+}
+
+/* スキル */

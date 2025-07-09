@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイピングアプリ</title>
+    <link rel="stylesheet" href="./main.css">
+    <audio id="bgm" src="./bgm/maou_44_hikari_trigger.mp3" loop autoplay></audio>
+</head>
+
+<body>
+    <div id="sub-menu">
+        <p id="help">？</p>
+        <p id="history">履歴</p>
+        <p id="home">ホーム</p>
+    </div>
+
+    <div id="historyDiv">
+    </div>
+
+    <div id="helpDiv">
+        <p>＜モード説明＞</p>
+        <p>文章出題・・・10個の文章をタイピングするモード</p>
+        <p>単語出題・・・10個の単語をタイピングするモード</p>
+        <p>エンドレス・・・文章出題数が50個になる。単語出題数が100個になる。</p>
+    </div>
+
+    <div id="menu">
+        <h1 id="titleText">タイピングゲーム</h1><br><br><br><br>
+        <input type="text" , placeholder="なまえ" id="nameInput">
+        <p id="startText">スタート</p>
+    </div>
+
+    <div id="start" class="NoneClass">
+        <h1 id="modeSelect">モード選択</h1>
+        <div id="modeSelectDiv">
+            <p id="textMode">文章出題</p>
+            <p id="wordMode">単語出題</p>
+            <p id="endress">エンドレス</p>
+        </div>
+        <pi id="spaceToStart">Space to start</pi>
+    </div>
+
+    <div id="play" class="NoneClass">
+        <p id="Q1"></p>
+        <h3 id="Q2"></h3>
+        <h1 id="Q3"></h1>
+    </div>
+
+    <div id="result" class="NoneClass">
+        <div id="resultLeft" class="NoneClass">
+            <p>タイピング</p>
+        </div>
+        <div id="resultRight" class="NoneClass">
+            <p id="resultText">結果</p>
+            <div id="resultScore" class="flexClass"><p>スコア</p></div>
+            <div id="resultLebel" class="flexClass"><p>レベル</p></div>
+            <div id="resultTime" class="flexClass"><p>入力時間</p></div>
+            <div id="resultNumOfType" class="flexClass"><p>入力文字数</p></div>
+            <div class="flexClass" id="resultMissNumOfType"><p>ミス入力数</p></div>
+            <div id="resultWpm" class="flexClass"><p>WPM</p></div>
+            <div id="resultAccyracyRate" class="flexClass"><p>正確率</p></div>
+            <div class="flexClass"><p>苦手キー</p><div id="resultWeakKey"></div></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>

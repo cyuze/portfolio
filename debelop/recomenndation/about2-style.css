@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+header .menu {
+    width: 70%;
+}
+
+.menu {
+    background-color: rgb(206, 206, 206);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    border-radius: 10px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+#top {
+    display: flex;
+    margin-top: 100px;
+}
+
+#top .left,
+.right {
+    width: 50%;
+}
+
+p{
+    letter-spacing: 3px;
+}
+
+h1 {
+    margin-top: 300px;
+}
+
+.right img,
+.left img {
+    width: 50%;
+}
+
+.right,
+.left {
+    text-align: center;
+}
+
+.a2016 {
+    background-image: url(./img/2016.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.a2017 {
+    background-image: url(./img/2017.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.a2018 {
+    background-image: url(./img/2018.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.a2019 {
+    background-image: url(./img/2019.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.a2021 {
+    background-image: url(./img/2021.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.a2022 {
+    background-image: url(./img/2022.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main p {
+    color: rgb(250, 130, 130);
+    font-size: 25px;
+    -webkit-text-stroke: 1px black;
+}
+
+h1 {
+    color: rgb(250, 130, 130);
+    font-size: 25px;
+    -webkit-text-stroke: 1px black;
+}
+
+main {
+    margin-top: 200px;
+    display: flex;
+}
+
+body {
+    background-color: black;
+    background-size: contain;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: brown;
+    font-size: large;
+    background-color: aqua;
+}
+
+footer, p {
+    color: aliceblue;
+    text-align: center;
+}
+
+footer {
+    margin-top: 100px;
+}
+
