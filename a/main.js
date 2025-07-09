@@ -25,7 +25,7 @@ IntroductionBtn.addEventListener('mouseover', function () {
     IntroductionBtn.textContent = '▶自己紹介';
 });
 IntroductionBtn.addEventListener('mouseout', function () {
-    IntroductionBtn.textContent = '　自己紹介';
+    IntroductionBtn.textContent = '自己紹介';
 
 });
 SkillBtn.addEventListener('mouseover', function () {
@@ -33,21 +33,21 @@ SkillBtn.addEventListener('mouseover', function () {
     SkillBtn.textContent = '▶スキル'
 });
 SkillBtn.addEventListener('mouseout', function () {
-    SkillBtn.textContent = '　スキル'
+    SkillBtn.textContent = 'スキル'
 });
 RamanBtn.addEventListener('mouseover', function () {
     RamanBtn.style.cursor = 'pointer';
     RamanBtn.textContent = '▶ラーメン'
 });
 RamanBtn.addEventListener('mouseout', function () {
-    RamanBtn.textContent = '　ラーメン'
+    RamanBtn.textContent = 'ラーメン'
 });
 DevelopBtn.addEventListener('mouseover', function () {
     DevelopBtn.style.cursor = 'pointer';
     DevelopBtn.textContent = '▶開発物'
 });
 DevelopBtn.addEventListener('mouseout', function () {
-    DevelopBtn.textContent = '　開発物'
+    DevelopBtn.textContent = '開発物'
 });
 
 $('.Top_slider').slick({

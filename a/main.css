@@ -81,6 +81,17 @@ h4 {
     margin-bottom: 0;
 }
 
+.aspirationSction h4 {
+    margin: 2rem auto 5px;
+    width: 70%;
+}
+
+.introductionSection p {
+    font-size: 1rem;
+    margin: 0 auto 2rem;
+    width: 70%;
+}
+
 .miniIntroductionDiv {
     border: 2px solid #ffffff;
     border-radius: 20px;
@@ -88,38 +99,21 @@ h4 {
     margin: 1rem auto 1rem auto;
 }
 
-.miniIntroductionDivItem1 {
-    display: flex;
-    width: 90%;
+.miniIntroductionDiv table{
     margin: auto;
 }
 
-.miniIntroductionDivItem2 {
-    width: 50%;
-    display: flex;
+.miniIntroductionDiv .tdH3 {
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
 }
 
-.miniIntroductionDivItem2 h3 {
-    margin: auto 0 auto 0;
-    padding: 0;
-}
-
-.miniIntroductionDivItem2 p {
-    margin: auto 0 auto 1rem;
-    padding: 0;
+.miniIntroductionDiv .tdGrayPtag {
+    font-family: 'DotGothic16', sans-serif;
     color: #989898;
-}
-
-.miniIntroductionDivItem3 {
-    width: 50%;
-    text-align: right;
-    margin: auto 0 auto 0;
-}
-
-.miniIntroductionDivItem3 p {
-    margin: 0;
-    padding: 0;
-    color: #989898;
+    padding-left: 50px;
 }
 
 .miniIntroductionDiv2 {
@@ -128,18 +122,55 @@ h4 {
     display: flex;
 }
 
-.miniIntroductionDiv2 p {
-    margin: 0 0 10px 0;
-    padding: 0;
-}
-
-.miniIntroductionDiv2Item1 {
-    width: auto;
-}
-
-.miniIntroductionDiv2Item2 {
-    width: auto;
-    margin-left: 1rem;
+.miniIntroductionDiv2 td {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
 }
 
 /* スキル */
+.skillSection h1 {
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.evaluationCriteriaDiv {
+    width: 75%;
+    margin: auto;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.evaluationCriteriaDiv div {
+    display: flex;
+}
+
+.evaluationCriteriaDiv hr {
+    height: 5px;
+    background: linear-gradient(to right, white, #7BE888);
+    width: 90%;
+    margin-left: 0;
+    border-radius: 10px;
+}
+
+.evaluationCriteriaDiv h4 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.evaluationCriteriaDiv p {
+    width: 20%;
+    text-align: left;
+    margin: 0;
+    font-size: 20px;
+}
+
+.evaluationCriteriaDiv .PtagBold {
+    font-weight: bold;
+}
+
+.evaluationCriteriaDiv .PtagGray {
+    color: #989898;
+}
