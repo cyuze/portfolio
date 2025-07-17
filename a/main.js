@@ -8,16 +8,20 @@ const RamanBtn = document.getElementById('RamanBtn');
 const DevelopBtn = document.getElementById('DevelopBtn');
 // ページ遷移実装
 IntroductionBtn.addEventListener('click', function () {
-    window.location.href = 'introduction.html';
+    const target = document.getElementById('introductionSection');
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
 });
 SkillBtn.addEventListener('click', function () {
-    window.location.href = 'skill.html';
+    const target = document.getElementById('skillSection');
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
 });
 RamanBtn.addEventListener('click', function () {
-    window.location.href = 'ramen.html';
+    const target = document.getElementById('historySection');
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
 });
 DevelopBtn.addEventListener('click', function () {
-    window.location.href = 'develop.html';
+    const target = document.getElementById('developmentSection');
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
 });
 // ホバー実装
 IntroductionBtn.addEventListener('mouseover', function () {
@@ -25,7 +29,7 @@ IntroductionBtn.addEventListener('mouseover', function () {
     IntroductionBtn.textContent = '▶自己紹介';
 });
 IntroductionBtn.addEventListener('mouseout', function () {
-    IntroductionBtn.textContent = '自己紹介';
+    IntroductionBtn.textContent = '　自己紹介';
 
 });
 SkillBtn.addEventListener('mouseover', function () {
@@ -33,21 +37,21 @@ SkillBtn.addEventListener('mouseover', function () {
     SkillBtn.textContent = '▶スキル'
 });
 SkillBtn.addEventListener('mouseout', function () {
-    SkillBtn.textContent = 'スキル'
+    SkillBtn.textContent = '　スキル'
 });
 RamanBtn.addEventListener('mouseover', function () {
     RamanBtn.style.cursor = 'pointer';
     RamanBtn.textContent = '▶ラーメン'
 });
 RamanBtn.addEventListener('mouseout', function () {
-    RamanBtn.textContent = 'ラーメン'
+    RamanBtn.textContent = '　ラーメン'
 });
 DevelopBtn.addEventListener('mouseover', function () {
     DevelopBtn.style.cursor = 'pointer';
     DevelopBtn.textContent = '▶開発物'
 });
 DevelopBtn.addEventListener('mouseout', function () {
-    DevelopBtn.textContent = '開発物'
+    DevelopBtn.textContent = '　開発物'
 });
 
 $('.Top_slider').slick({
@@ -103,4 +107,65 @@ $('.Top_slider').on('beforeChange', function (event, slick, currentSlide, nextSl
 // });
 $('.Top_slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
     $('#text-content6').text(texts6[nextSlide]); // 次のスライドに対応するテキストを表示
+});
+
+// 評価詳細ボタン
+document.addEventListener('DOMContentLoaded', function () {
+    const detailBtn = document.getElementById('detailEvaluationBtn');
+    const sourceTable = document.getElementById('sourceTable');
+    if (detailBtn && sourceTable) {
+        detailBtn.addEventListener('click', function () {
+            sourceTable.classList.toggle('show');
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const detailBtn = document.getElementById('detailEvaluationBtn2');
+    const sourceTable = document.getElementById('sourceTable2');
+    if (detailBtn && sourceTable) {
+        detailBtn.addEventListener('click', function () {
+            sourceTable.classList.toggle('show');
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const detailBtn = document.getElementById('detailEvaluationBtn3');
+    const sourceTable = document.getElementById('sourceTable3');
+    if (detailBtn && sourceTable) {
+        detailBtn.addEventListener('click', function () {
+            sourceTable.classList.toggle('show');
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const detailBtn = document.getElementById('detailEvaluationBtn4');
+    const sourceTable = document.getElementById('sourceTable4');
+    if (detailBtn && sourceTable) {
+        detailBtn.addEventListener('click', function () {
+            sourceTable.classList.toggle('show');
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const detailBtn = document.getElementById('detailEvaluationBtn5');
+    const sourceTable = document.getElementById('sourceTable5');
+    if (detailBtn && sourceTable) {
+        detailBtn.addEventListener('click', function () {
+            sourceTable.classList.toggle('show');
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const detailBtn = document.getElementById('detailEvaluationBtn6');
+    const sourceTable = document.getElementById('sourceTable6');
+    if (detailBtn && sourceTable) {
+        detailBtn.addEventListener('click', function () {
+            sourceTable.classList.toggle('show');
+        });
+    }
 });

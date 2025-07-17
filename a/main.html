@@ -22,19 +22,19 @@
         <div class="borderDiv">
             <table>
                 <tr class="top-menu">
-                    <td id="IntroductionBtn" class="leftTd">自己紹介</td>
-                    <td id="SkillBtn" class="rightTd">スキル</td>
+                    <td id="IntroductionBtn" class="leftTd">　自己紹介</td>
+                    <td id="SkillBtn" class="rightTd">　スキル</td>
                 </tr>
                 <tr class="under-menu">
-                    <td id="RamanBtn" class="leftTd">ラーメン</td>
-                    <td id="DevelopBtn" class="rightTd">開発物</td>
+                    <td id="RamanBtn" class="leftTd">　ラーメン</td>
+                    <td id="DevelopBtn" class="rightTd">　開発物</td>
                 </tr>
             </table>
         </div>
     </section>
 
     <!-- 自己紹介 -->
-    <section class="introductionSection">
+    <section class="introductionSection" id="introductionSection">
         <h1>INTRODUCTION</h1>
         <!-- 大まかな自己紹介 -->
         <div class="miniIntroductionDiv">
@@ -82,9 +82,9 @@
     </section>
 
     <!-- スキル -->
-    <section class="skillSection">
+    <section class="skillSection" id="skillSection">
         <h1>SKILL</h1>
-        <div class="evaluationCriteriaDiv">
+        <!-- <div class="evaluationCriteriaDiv">
             <h4>評価基準</h4>
             <hr>
             <div>
@@ -101,122 +101,318 @@
                 <p class="PtagGray">少し詳しい</p>
                 <p class="PtagGray">とても詳しい</p>
             </div>
-        </div>
+        </div> -->
         <!-- フロントエンド -->
-        <div style="width: 80%; margin: 50px auto 50px auto;">
-            <div style="display: flex;">
-                <div style="width: 30%; border:2px solid #ffffff;border-radius: 20px; margin: auto;">
+        <div class="skillDiv">
+            <div class="skillDivItem1">
+                <div class="skillDivItem1IMG">
                     <img src=" ./ポートフォリオ/フロントエンド.png" alt="" style="width: 100%;">
                 </div>
-                <div style=" width: 68%; border:2px solid #ffffff;border-radius: 20px; text-align:center;">
+                <div class="skillDivItem1TEXT">
                     <h3>フロントエンド</h3>
                 </div>
             </div>
-            <div style="border:2px solid #ffffff;border-radius: 20px; margin: 10px auto auto auto;">
-                <div style="display: flex; margin-top: 20px; margin-bottom: 20px;">
-                    <div style="margin: auto;">
-                        <h4 style="margin: 0;">JavaScript</h4>
-                        <h4 style="margin: 0; font-weight: normal;">総合　　LV.勉強中</h4>
-                        <p>基本的な言語理解　LV.平均</p>
-                        <p>DOM操作　　　　　 LV.平均</p>
-                        <p>動きの最適化　　　LV.平均</p>
-                        <p>コードの可読性　　LV.勉強中</p>
-                        <p>セキュリティ　　　LV.勉強中</p>
-                        <p>テストとでバック　未履修</p>
-                        <p>ライブラリ　　　　未履修</p>
-                        <p>フレームワーク　　未履修</p>
+            <div class="skillDivItem2">
+                <div class="skillDivItem2Item">
+                    <div>
+                        <table>
+                            <tr>
+                                <td>JavaScript</td>
+                            </tr>
+                            <tr>
+                                <td>総合</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                        </table>
+                        <p class="detailEvaluationBtn" id="detailEvaluationBtn">詳細</p>
+                        <table class="table2" id="sourceTable">
+                            <tr>
+                                <td>基本的な言語理解</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>DOM操作</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>動きの最適化</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>コードの可読性</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>セキュリティ</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>テストとでバック</td>
+                                <td>未履修</td>
+                            </tr>
+                            <tr>
+                                <td>ライブラリ</td>
+                                <td>未履修</td>
+                            </tr>
+                            <tr>
+                                <td>フレームワーク</td>
+                                <td>未履修</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div style="margin: auto;">
-                        <h4 style="margin: 0;">HTML＆CSS</h4>
-                        <h4 style="margin: 0; font-weight: normal;">総合　　LV.やや平均</h4>
-                        <p>基本的な言語理解　LV.平均</p>
-                        <p>コードの非冗長性　LV.平均</p>
-                        <p>セマンティックHTML LV.平均</p>
-                        <p>アクセシビリティ　LV.勉強中</p>
-                        <p>CSSの適切な設計　 LV.勉強中</p>
-                        <p>フレームワーク　　LV.勉強中</p>
-                        <p>動きの最適化　　　LV.勉強中</p>
-                        <p>テストとでバック　未履修</p>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>HTML＆CSS</td>
+                            </tr>
+                            <tr>
+                                <td>総合</td>
+                                <td>LV.やや平均</td>
+                            </tr>
+                        </table>
+                        <p class="detailEvaluationBtn2" id="detailEvaluationBtn2">詳細</p>
+                        <table class="table2" id="sourceTable2">
+                            <tr>
+                                <td>基本的な言語理解</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>コードの非冗長性</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>セマンティックHTML</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>アクセシビリティ</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>CSSの適切な設計</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>フレームワーク</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>動きの最適化</td>
+                                <td>LV.勉強中</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>テストとでバック</td>
+                                <td>未履修</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- データベース -->
-        <div style="width: 80%; margin: 0 auto 50px auto;">
-            <div style="display: flex;">
-                <div style="width: 30%; border:2px solid #ffffff;border-radius: 20px; margin: auto;">
-                    <img src=" ./ポートフォリオ/フロントエンド.png" alt="" style="width: 100%;">
+        <div class="skillDiv">
+            <div class="skillDivItem1">
+                <div class="skillDivItem1IMG">
+                    <img src=" ./ポートフォリオ/データベース.png" alt="" style="width: 100%;">
                 </div>
-                <div style=" width: 68%; border:2px solid #ffffff;border-radius: 20px; text-align:center;">
+                <div class="skillDivItem1TEXT">
                     <h3>データベース</h3>
                 </div>
             </div>
-            <div style="border:2px solid #ffffff;border-radius: 20px; margin: 10px auto auto auto;">
-                <div style="margin: 20px 0 20px 90px;">
-                    <h4 style="margin: 0;">MySQL</h4>
-                    <h4 style="margin: 0; font-weight: normal;">総合　　LV.勉強中</h4>
-                    <p>SQL基本構文理解　 LV.平均</p>
-                    <p>データベース設計　LV.勉強中</p>
-                    <p>セキュリティ　　　LV.未履修</p>
+            <div class="skillDivItem2">
+                <div class="databaseDiv">
+                    <div>
+                        <table>
+                            <tr>
+                                <td>MySQL</td>
+                            </tr>
+                            <tr>
+                                <td>総合</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                        </table>
+                        <p class="detailEvaluationBtn3" id="detailEvaluationBtn3">詳細</p>
+                        <table class="table2" id="sourceTable3">
+                            <tr>
+                                <td>基本構文理解</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>データベース設計</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>セキュリティ</td>
+                                <td>LV.未履修</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- バックグラウンド -->
-        <div style="width: 80%; margin: 0 auto 50px auto;">
-            <div style="display: flex;">
-                <div style="width: 30%; border:2px solid #ffffff;border-radius: 20px; margin: auto;">
-                    <img src=" ./ポートフォリオ/フロントエンド.png" alt="" style="width: 100%;">
+        <div class="skillDiv">
+            <div class="skillDivItem1">
+                <div class="skillDivItem1IMG">
+                    <img src="./ポートフォリオ/バックグラウンド.png" alt="" style="width: 100%;">
                 </div>
-                <div style=" width: 68%; border:2px solid #ffffff;border-radius: 20px; text-align:center;">
+                <div class="skillDivItem1TEXT">
                     <h3>バックグラウンド</h3>
                 </div>
             </div>
-            <div style="border:2px solid #ffffff;border-radius: 20px; margin: 10px auto auto auto;">
-                <div style="display: flex; margin-top: 20px; margin-bottom: 20px;">
-                    <div style="margin: auto;">
-                        <h4 style="margin: 0;">Python</h4>
-                        <h4 style="margin: 0; font-weight: normal;">総合　　LV.勉強中</h4>
-                        <p>基本的な言語理解　LV.平均</p>
-                        <p>DOM操作　　　　　 LV.平均</p>
-                        <p>動きの最適化　　　LV.平均</p>
-                        <p>コードの可読性　　LV.勉強中</p>
-                        <p>セキュリティ　　　LV.勉強中</p>
-                        <p>テストとでバック　未履修</p>
-                        <p>ライブラリ　　　　未履修</p>
-                        <p>フレームワーク　　未履修</p>
+            <div class="skillDivItem2">
+                <div class="skillDivItem2Item">
+                    <div>
+                        <table>
+                            <tr>
+                                <td>Python</td>
+                            </tr>
+                            <tr>
+                                <td>総合</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                        </table>
+                        <p class="detailEvaluationBtn4" id="detailEvaluationBtn4">詳細</p>
+                        <table class="table2" id="sourceTable4">
+                            <tr>
+                                <td>基本的な言語理解</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>DOM操作</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>動きの最適化</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>コードの可読性</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>セキュリティ</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>テストとでバック</td>
+                                <td>未履修</td>
+                            </tr>
+                            <tr>
+                                <td>ライブラリ</td>
+                                <td>未履修</td>
+                            </tr>
+                            <tr>
+                                <td>フレームワーク</td>
+                                <td>未履修</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div style="margin: auto;">
-                        <h4 style="margin: 0;">Java</h4>
-                        <h4 style="margin: 0; font-weight: normal;">総合　　LV.やや平均</h4>
-                        <p>基本的な言語理解　LV.平均</p>
-                        <p>コードの非冗長性　LV.平均</p>
-                        <p>セマンティックHTML LV.平均</p>
-                        <p>アクセシビリティ　LV.勉強中</p>
-                        <p>CSSの適切な設計　 LV.勉強中</p>
-                        <p>フレームワーク　　LV.勉強中</p>
-                        <p>動きの最適化　　　LV.勉強中</p>
-                        <p>テストとでバック　未履修</p>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>Java</td>
+                            </tr>
+                            <tr>
+                                <td>総合</td>
+                                <td>LV.やや平均</td>
+                            </tr>
+                        </table>
+                        <p class="detailEvaluationBtn5" id="detailEvaluationBtn5">詳細</p>
+                        <table class="table2" id="sourceTable5">
+                            <tr>
+                                <td>基本的な言語理解</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>コードの非冗長性</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>セマンティックHTML</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>アクセシビリティ</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>CSSの適切な設計</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>フレームワーク</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>動きの最適化</td>
+                                <td>LV.勉強中</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>テストとでバック</td>
+                                <td>未履修</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-                <div style="margin: 20px 0 20px 90px;">
-                    <h4 style="margin: 0;">PHP</h4>
-                    <h4 style="margin: 0; font-weight: normal;">総合　　LV.やや平均</h4>
-                    <p>基本的な言語理解　LV.平均</p>
-                    <p>コードの非冗長性　LV.平均</p>
-                    <p>セマンティックHTML LV.平均</p>
-                    <p>アクセシビリティ　LV.勉強中</p>
-                    <p>CSSの適切な設計　 LV.勉強中</p>
-                    <p>フレームワーク　　LV.勉強中</p>
-                    <p>動きの最適化　　　LV.勉強中</p>
-                    <p>テストとでバック　未履修</p>
+                <div class="databaseDivPHP">
+                    <div>
+                        <table>
+                            <tr>
+                                <td>PHP</td>
+                            </tr>
+                            <tr>
+                                <td>総合</td>
+                                <td>LV.やや平均</td>
+                            </tr>
+                        </table>
+                        <p class="detailEvaluationBtn6" id="detailEvaluationBtn6">詳細</p>
+                        <table class="table2" id="sourceTable6">
+                            <tr>
+                                <td>基本的な言語理解</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>コードの非冗長性</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>セマンティックHTML</td>
+                                <td>LV.平均</td>
+                            </tr>
+                            <tr>
+                                <td>アクセシビリティ</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>CSSの適切な設計</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>フレームワーク</td>
+                                <td>LV.勉強中</td>
+                            </tr>
+                            <tr>
+                                <td>動きの最適化</td>
+                                <td>LV.勉強中</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>テストとでバック</td>
+                                <td>未履修</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- その他 -->
-        <div style="width: 80%; margin: 0 auto 50px auto;">
+        <!-- <div style="width: 80%; margin: 0 auto 50px auto;">
             <div style="display: flex;">
                 <div style="width: 30%; border:2px solid #ffffff;border-radius: 20px; margin: auto;">
                     <img src=" ./ポートフォリオ/フロントエンド.png" alt="" style="width: 100%;">
@@ -235,27 +431,52 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- 保有資格 -->
-        <div style="width: 80%; margin: 0 auto 100px auto;">
-            <div style="display: flex;">
-                <div style="width: 30%; border:2px solid #ffffff;border-radius: 20px; margin: auto;">
+        <div class="sikakuDiv">
+            <div class="sikakuDivItem1">
+                <div class="sikakuDivItem1IMG">
                     <img src=" ./ポートフォリオ/フロントエンド.png" alt="" style="width: 100%;">
                 </div>
-                <div style=" width: 68%; border:2px solid #ffffff;border-radius: 20px; text-align:center;">
+                <div class="sikakuDivItem1TEXT">
                     <h3>保有資格</h3>
                 </div>
             </div>
-            <div style="border:2px solid #ffffff;border-radius: 20px; margin: 10px auto auto auto;">
-                <div style="margin: 20px 40px 20px 90px;">
+            <div class="sikakuDivItem2">
+                <table>
+                    <tr>
+                        <td>基本情報技術者試験</td>
+                    </tr>
+                    <tr>
+                        <td>情報検定…</td>
+                        <td>システムエンジニア認定</td>
+                    </tr>
+                    <tr>
+                        <td>情報検定…</td>
+                        <td>プログラマ認定</td>
+                    </tr>
+                    <tr>
+                        <td>Python検定…</td>
+                        <td>3級</td>
+                    </tr>
+                    <tr>
+                        <td>実用英語技能検定試験…</td>
+                        <td>準2級</td>
+                    </tr>
+                    <tr>
+                        <td>日本漢字能力検定…</td>
+                        <td>3級</td>
+                    </tr>
+                </table>
+                <!-- <div style="margin: 20px 40px 20px 90px;">
                     <p style="color:  #ffffff;">基本情報技術者試験</p>
                     <p style="color:  #ffffff;">情報検定　システムエンジニア認定</p>
                     <p style="color:  #ffffff;">情報検定　プログラマ認定</p>
                     <p style="color:  #ffffff;">Python検定　　　　　　　　3級</p>
                     <p style="color:  #ffffff;">実用英語技能検定試験　　　準2級</p>
                     <p style="color:  #ffffff;">日本漢字能力検定　　　　　3級</p>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -263,7 +484,7 @@
 
     <!-- ラーメンヒストリー -->
     <h1 style="margin-top: 3rem; margin-bottom: 0;">HISTORY</h1>
-    <section style="border:2px solid #ffffff; padding: 20px; width: 90%; margin: auto; border-radius: 20px;">
+    <section style="border:2px solid #ffffff; padding: 20px; width: 90%; margin: auto; border-radius: 20px;" id="historySection">
         <div style="width: 80%; margin: auto;">
             <h3 style="margin: 1rem auto 20px; width: 90%;">ラーメンと私</h3>
             <p style="margin: 1rem auto 3rem; width: 90%;">麵、出汁、トッピングによって多様な姿を見せるラーメンが好きです。
@@ -312,7 +533,7 @@
 
     <!-- 開発物 -->
     <h1 style="margin-top: 3rem; margin-bottom: 0; ">DEVELOPMENT</h1>
-    <section style="border:2px solid #ffffff; padding: 20px; width: 90%; margin: auto; border-radius: 20px;">
+    <section style="border:2px solid #ffffff; padding: 20px; width: 90%; margin: auto; border-radius: 20px;" id="developmentSection">
         <div style="width: 80%; margin: auto;">
             <h2 style="color: white; margin: 0;">タイピングゲーム</h2>
             <p style="margin: 0; margin-bottom: 20px;">javascript、html・css</p>
