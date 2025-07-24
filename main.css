@@ -37,86 +37,444 @@ h4 {
 }
 
 /* トップ */
-.topSection section {
+.borderDiv {
     border: 2px solid #ffffff;
     border-radius: 20px;
+    width: 65%;
+    margin: auto;
+}
+
+.topSection h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.topSection table {
+    margin: auto;
     width: 60%;
-}
-
-.top-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.top-menu h4 {
-    margin-right: auto;
-    margin-left: auto;
-    font-family: 'DotGothic16', sans-serif;
-    font-size: 1rem;
-    color: #ffffff;
     text-align: center;
+    margin-top: 50px;
 }
 
-.under-menu h4 {
-    margin-right: auto;
-    margin-left: auto;
+.topSection tr {
+    height: 100px;
+}
+
+.topSection .leftTd {
     font-family: 'DotGothic16', sans-serif;
+    color: white;
     font-size: 1rem;
-    color: #ffffff;
-    text-align: center;
+    display: inline;
+    margin-right: 200px;
 }
 
-.under-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-container img {
-    flex-shrink: 1;
+.topSection .rightTd {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    font-size: 1rem;
+    display: inline;
 }
 
 /* 自己紹介 */
-
-/* スキル */
-.skill-section p {
-    font-family: 'DotGothic16', sans-serif;
-    color: #989898;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
+.introductionSection {
+    width: 93%;
+    margin: 0 auto 0 auto;
 }
 
-.baseHyouka-div p {
+.introductionSection h1 {
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.aspirationSction h4 {
+    margin: 2rem auto 5px;
+    width: 70%;
+}
+
+.introductionSection p {
+    font-size: 1rem;
+    margin: 0 auto 2rem;
+    width: 70%;
+}
+
+.miniIntroductionDiv {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 70%;
+    margin: 1rem auto 1rem auto;
+}
+
+.miniIntroductionDiv table {
+    margin: auto;
+}
+
+.miniIntroductionDiv .tdH3 {
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+}
+
+.miniIntroductionDiv .tdGrayPtag {
+    font-family: 'DotGothic16', sans-serif;
+    color: #989898;
+    padding-left: 50px;
+}
+
+.miniIntroductionDiv2 {
+    width: 90%;
+    margin: 1rem auto 1rem auto;
+    display: flex;
+}
+
+.miniIntroductionDiv2 td {
+    font-family: 'DotGothic16', sans-serif;
     color: white;
 }
 
-/* スライダー */
-.Top_slider div img {
-    margin-left: auto;
-    margin-right: auto;
+/* スキル */
+.skillSection {
+    width: 84%;
+    margin: auto;
 }
 
-.Top_slider div {
-    margin-right: 10px;
-    margin-left: 10px;
+.skillSection h1 {
+    margin-top: 3rem;
+    margin-bottom: 0;
 }
 
-.slick-slide img {
-    border: none;
-    /* 初期状態では枠線なし */
-    filter: brightness(60%);
-
+.evaluationCriteriaDiv {
+    width: 75%;
+    margin: auto;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
-.slick-current img {
-    border-radius: 5px;
-    /* 角を丸くする */
-    filter: brightness(100%);
+.evaluationCriteriaDiv div {
+    display: flex;
 }
 
-/* ラーメンと私 */
-.bold-text {
+.evaluationCriteriaDiv hr {
+    height: 5px;
+    background: linear-gradient(to right, white, #7BE888);
+    width: 90%;
+    margin-left: 0;
+    border-radius: 10px;
+}
+
+.evaluationCriteriaDiv h4 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.evaluationCriteriaDiv p {
+    width: 20%;
+    text-align: left;
+    margin: 0;
+    font-size: 20px;
+}
+
+.evaluationCriteriaDiv .PtagBold {
     font-weight: bold;
+}
+
+.evaluationCriteriaDiv .PtagGray {
+    color: #989898;
+}
+
+/* スキルの各項目 */
+.tdSm {
+    font-size: 20px;
+}
+
+.skillDiv {
+    width: 80%;
+    margin: 50px auto 50px auto;
+}
+
+.skillDiv p {
+    margin: 0;
+    padding: 0;
+}
+
+.skillDivItem1 {
+    display: flex;
+}
+
+.skillDivItem2 {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin: 10px auto auto auto;
+}
+
+.skillDivItem2Item {
+    width: 85%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skillDivItem2Item div {
+    margin: 20px auto 30px auto;
+}
+
+.skillDivItem2 table {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+}
+
+.skillDivItem2 .table2 {
+    color: #989898;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 20px;
+}
+
+.skillDivItem1IMG {
+    width: 30%;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.skillDivItem1TEXT {
+    width: 68%;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.databaseDiv div {
+    width: 85%;
+    margin: 20px auto 30px auto;
+}
+
+.databaseDivPHP div {
+    width: 80%;
+    margin: 0 auto 30px auto;
+}
+
+/* 保有資格 */
+.sikakuDiv {
+    width: 80%;
+    margin: 0 auto 100px auto;
+}
+
+.sikakuDivItem1 {
+    display: flex;
+}
+
+.sikakuDivItem1IMG {
+    width: 30%;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.sikakuDivItem1TEXT {
+    width: 68%;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.sikakuDivItem2 {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin: 10px auto auto auto;
+}
+
+.sikakuDivItem2 table {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin: 20px auto 30px 70px;
+}
+
+/* 詳細ボタン */
+.detailEvaluationBtn {
+    font-family: 'DotGothic16', sans-serif;
+    color: #989898;
+    font-size: 15px;
+    border-bottom: #989898 2px solid;
+    display: inline;
+}
+
+#sourceTable {
+    display: none;
+}
+
+#sourceTable.show {
+    display: table;
+}
+
+/* 詳細ボタン2 */
+.detailEvaluationBtn2 {
+    font-family: 'DotGothic16', sans-serif;
+    color: #989898;
+    font-size: 15px;
+    border-bottom: #989898 2px solid;
+    display: inline;
+}
+
+#sourceTable2 {
+    display: none;
+}
+
+#sourceTable2.show {
+    display: table;
+}
+
+/* 詳細ボタン3 */
+.detailEvaluationBtn3 {
+    font-family: 'DotGothic16', sans-serif;
+    color: #989898;
+    font-size: 15px;
+    border-bottom: #989898 2px solid;
+    display: inline;
+}
+
+#sourceTable3 {
+    display: none;
+}
+
+#sourceTable3.show {
+    display: table;
+}
+
+/* 詳細ボタン4 */
+.detailEvaluationBtn4 {
+    font-family: 'DotGothic16', sans-serif;
+    color: #989898;
+    font-size: 15px;
+    border-bottom: #989898 2px solid;
+    display: inline;
+}
+
+#sourceTable4 {
+    display: none;
+}
+
+#sourceTable4.show {
+    display: table;
+}
+
+/* 詳細ボタン5 */
+.detailEvaluationBtn5 {
+    font-family: 'DotGothic16', sans-serif;
+    color: #989898;
+    font-size: 15px;
+    border-bottom: #989898 2px solid;
+    display: inline;
+}
+
+#sourceTable5 {
+    display: none;
+}
+
+#sourceTable5.show {
+    display: table;
+}
+
+/* 詳細ボタン6 */
+.detailEvaluationBtn6 {
+    font-family: 'DotGothic16', sans-serif;
+    color: #989898;
+    font-size: 15px;
+    border-bottom: #989898 2px solid;
+    display: inline;
+}
+
+#sourceTable6 {
+    display: none;
+}
+
+#sourceTable6.show {
+    display: table;
+}
+
+/* ラーメンヒストリー */
+.ramanhistorySection {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 65%;
+    margin: auto;
+}
+
+.ramanhistorySection h3 {
+    margin: 20px auto 0 auto;
+    width: 90%;
+}
+
+.ramanhistorySection p {
+    margin: 10px auto 0 auto;
+    width: 90%;
+}
+
+.sliderItem {
+    display: flex;
+}
+
+.sliderLeft {
+    width: 50%;
+}
+
+.sliderLeft ul {
+    height: 0;
+}
+
+.sliderLeft img {
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.sliderRight {
+    width: 50%;
+}
+
+.sliderRight h4 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.sliderRight p {
+    font-size: 0.5rem;
+    margin: 0;
+}
+
+.sliderRightText {
+    display: flex;
+}
+
+/* 共通の矢印スタイル */
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 45%; /* 垂直中央に配置 */
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* 左矢印（prev） */
+.slick-prev {
+  left: -20px; /* 左端からの距離を調整 */
+}
+
+/* 右矢印（next） */
+.slick-next {
+  right: 40px; /* 右端からの距離を調整 */
+}
+
+.slick-prev img, .slick-next img {
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: none;       /* 矢印の内容を消す */
+  display: none;       /* 要素自体を非表示にする */
 }
