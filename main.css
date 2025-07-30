@@ -6,6 +6,11 @@ html {
     background-color: black;
 }
 
+body {
+    min-width: 1250px;
+    overflow-x: auto;
+}
+
 p {
     font-family: 'DotGothic16', sans-serif;
     color: white;
@@ -35,6 +40,7 @@ h4 {
     color: white;
     font-size: 1rem;
 }
+
 
 /* トップ */
 .borderDiv {
@@ -130,6 +136,12 @@ h4 {
 .miniIntroductionDiv2 td {
     font-family: 'DotGothic16', sans-serif;
     color: white;
+}
+
+.true-name {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    font-size: 20px;
 }
 
 /* スキル */
@@ -451,30 +463,123 @@ h4 {
 }
 
 /* 共通の矢印スタイル */
-.slick-prev, .slick-next {
-  position: absolute;
-  top: 45%; /* 垂直中央に配置 */
-  transform: translateY(-50%);
-  z-index: 10;
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 45%;
+    /* 垂直中央に配置 */
+    transform: translateY(-50%);
+    z-index: 10;
 }
 
 /* 左矢印（prev） */
 .slick-prev {
-  left: -20px; /* 左端からの距離を調整 */
+    left: -20px;
+    /* 左端からの距離を調整 */
 }
 
 /* 右矢印（next） */
 .slick-next {
-  right: 40px; /* 右端からの距離を調整 */
+    right: 40px;
+    /* 右端からの距離を調整 */
 }
 
-.slick-prev img, .slick-next img {
-  width: 40px;
-  height: 40px;
+.slick-prev img,
+.slick-next img {
+    width: 40px;
+    height: 40px;
 }
 
 .slick-prev::before,
 .slick-next::before {
-  content: none;       /* 矢印の内容を消す */
-  display: none;       /* 要素自体を非表示にする */
+    content: none;
+    /* 矢印の内容を消す */
+    display: none;
+    /* 要素自体を非表示にする */
+}
+
+/* ラーメンヒストリー */
+.historyH1 {
+    margin: 20px;
+}
+
+/* 開発物 */
+
+.developmentTitleH1 {
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.developmentSection {
+    border: 2px solid #ffffff;
+    padding: 20px;
+    width: 63%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.developmentDiv h3,
+.developmentDiv h4 {
+    margin: 0;
+}
+
+.developmentDivItem {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.developmentDivItem .imgDiv {
+    width: 50%;
+    margin: auto;
+}
+
+.sliderDiv {
+    width: 100%;
+}
+
+.developmentDivItem img {
+    width: 100%;
+}
+
+.developmentSection p {
+    width: 50%;
+    margin: 0;
+    font-size: 20px;
+}
+
+.libraryTextSlider {
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+/* 左矢印（prev） */
+.developmentSection .slick-prev {
+    left: -15px;
+    /* 左端からの距離を調整 */
+}
+
+/* 右矢印（next） */
+.developmentSection .slick-next {
+    right: -15px;
+    /* 右端からの距離を調整 */
+}
+
+.pokemon {
+    font-size: 55px;
+}
+
+.pokemonDiv p {
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 20px;
 }
